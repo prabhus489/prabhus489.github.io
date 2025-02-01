@@ -1,128 +1,401 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>BITS Pilani WILP Student Profile Page</title>
+<!--index.html-->
 
-    <meta name="author" content="Codeconvey" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
+<!DOCTYPE html> 
+<html lang="en"> 
 
-    <!--Only for demo purpose - no need to add.-->
-    <link rel="stylesheet" href="css/demo.css" />
-    
-	    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-		
-<div class="ScriptTop">
-    <div class="rt-container">
-        <div class="col-rt-4" id="float-right">
- 
-            <!-- Ad Here -->
-            
-        </div>
-        <div class="col-rt-2">
-            <ul>
-                <li><a href="https://www.linkedin.com/in/prabhu-sundarraj/" title="LinkedIn Profile">LinkedIn Profile</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0"> 
+    <title>My Portfolio</title> 
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="responsive.css"> 
+</head> 
 
-<header class="ScriptHeader">
-    <div class="rt-container">
-    	<div class="col-rt-12">
-        	<div class="rt-heading">
-            	<h1>BITS Pilani WILP Student Profile Page</h1>
-                <p>A BITS Pilani WILP Student Profile Page design.</p>
+<body> 
+    <!-- Navbar header section -->
+    <header class="header"> 
+        <nav class="navbar"> 
+            <div class="logo"> 
+                <h2 class="logo-heading">Prabhu S</h2> 
+            </div> 
+            <div class="hamburger" id="hamburger"> 
+                <i class="fas fa-bars hamburger-icon"></i> 
+                <i class="fas fa-times cross-icon"></i> 
+            </div> 
+            <div class="menu"> 
+                <ul class="menu-list"> 
+                    <li class="menu-list-items"> 
+                        <a class="links" href="#home"> 
+                            Home 
+                        </a> 
+                    </li> 
+                    <li class="menu-list-items"> 
+                        <a class="links" href="#portfolio"> 
+                            Portfolio 
+                        </a> 
+                    </li> 
+                    <li class="menu-list-items"> 
+                        <a class="links" href="#about"> 
+                            About 
+                        </a> 
+                    </li> 
+                    <li class="menu-list-items"> 
+                        <a class="links" href="#services"> 
+                            Services 
+                        </a> 
+                    </li> 
+                    <li class="menu-list-items"> 
+                        <a class="links" href="#contact"> 
+                            Contact Me 
+                        </a> 
+                    </li> 
+                </ul> 
+            </div> 
+        </nav> 
+    </header> 
+
+    <!-- Main hero banner -->
+    <section id="home" class="hero"> 
+        <div class="intro"> 
+            <div class="headings"> 
+                <h3 class="greet-heading">Hello, I'm</h3> 
+                <h1 class="my-heading">Prabhu S</h1> 
+                <h4 class="sub-heading"> 
+                    A Software Engineer with 8 years and 6 months of Experience in IT Industry. 
+                </h4> 
+            </div> 
+            <div class="intro-buttons"> 
+                <button class="btn common-btn" onclick="location.href='#contact'">Hire Me</button> 
+                <a href="./CV/Prabhu_Latest_CV_29012025.pdf" download="CV">
+                    <button type="button" class="btn ghost-btn">Get Resume/CV</button>
+                </a> 
+            </div> 
+        </div> 
+    </section> 
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio"> 
+        <div class="portfolio-heading"> 
+            <h1 class="my-heading text-center">Featured Portfolio</h1> 
+        </div> 
+        <div class="portfolio-content"> 
+            <div class="my-row"> 
+                <div class="my-col"> 
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./Images/Prod_eng.png"
+                                alt="Software Product Engineering"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text">Software Product Engineering</h3> 
+                        <p class="small-para blue-text">Product Engineering</p> 
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./Images/Web-dev.jpg"
+                                alt="Web Development"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                            Web Development 
+                        </h3> 
+                        <p class="small-para blue-text">Development</p> 
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./Images/DandA_mlops.png" alt="Data Analytics & MLOps"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text">
+                            Data Analytics & MLOps
+                        </h3> 
+                        <p class="small-para blue-text">
+                            D&A, MLOps
+                        </p> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="my-row"> 
+                <div class="my-col"> 
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./Images/devops.jpg"
+                                alt="Application Support & DevOps Engineering"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                            Application Support & DevOps Engineering 
+                        </h3> 
+                        <p class="small-para blue-text">
+                            DevOps
+                        </p> 
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./Images/Test_automation.png"
+                                alt="Test Automation"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                            Test Automation 
+                        </h3> 
+                        <p class="small-para blue-text"> 
+                            Automation Testing 
+                        </p> 
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card port-card"> 
+                        <div class="image"> 
+                            <img src="./Images/mentoring.png"
+                                alt="Mentoring, Training & Development"> 
+                        </div> 
+                        <h3 class="greet-heading blue-text">
+                            Mentoring, Training & Development
+                        </h3> 
+                        <p class="small-para blue-text">
+                            Mentroing, T&D
+                        </p> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+
+    <!-- About Section -->
+    <section id="about" class="about"> 
+        <div class="about-text"> 
+            <h1 class="my-heading">About Me</h1> 
+            <p class="lead-para"> 
+                A highly skilled, results-oriented, Detail-oriented and experienced 
+                Site Reliability Engineer (SRE) with expertise in Test Automation and  DevOps Engineer 
+                for 8 years & 6 months of experience in designing, developing and executing automated tests 
+                for web and API applications. Expertise in using modern testing frameworks, CI/CD tools, 
+                and test management solutions to ensure robust quality assurance practices. 
+                Proven track record in incident response, disaster recovery, and implementing 
+                service level objectives (SLOs) and service level indicators (SLIs). 
+                Adept at liaising with key stakeholders to initiate automation in SDLC, 
+                effectively execute strategic projects & deliver compelling value to clients. 
+            </p> 
+            <p>  
+            </p> 
+        </div> 
+        <div class="about-image"> 
+            <img src="./Images/IMG-20181219-WA0009.jpg" alt="About Image"> 
+        </div> 
+    </section> 
+
+    <!-- Services Section -->
+    <section class="services" id="services"> 
+        <div class="services-heading"> 
+            <h1 class="my-heading text-center">My Services</h1> 
+        </div> 
+        <div class="services-content"> 
+            <div class="my-row"> 
+                <div class="my-col"> 
+                    <div class="my-card"> 
+                        <div class="icon"> 
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div> 
+                        <h3 class="greet-heading blue-text">Software Product Engineering</h3> 
+                        <p class="small-para"> 
+                            Software product engineering (SPE) is designing, developing, 
+                            testing, deploying, and maintaining software products. 
+                            SPE includes creating and maintaining a product from its 
+                            conception to the end of its life. Software product engineering 
+                            has several benefits – improved quality, reduced costs, 
+                            increased efficiency, and faster time to market. 
+                        </p> 
+                     
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card"> 
+                        <div class="icon"> 
+                            <i class="fa-solid fa-code"></i>
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                            Web Development 
+                        </h3> 
+                        <p class="small-para"> 
+                            Web development refers to the creating, 
+                            building, and maintaining 
+                            of websites. It includes aspects such as 
+                            web design, web publishing, 
+                            web programming, and database management. 
+                            It is the creation of an 
+                            application that works over the internet 
+                            i.e. websites. 
+                        </p>  
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card"> 
+                        <div class="icon"> 
+                            <i class="fa-solid fa-flask-vial"></i>
+                        </div> 
+                        <h3 class="greet-heading blue-text">Data Analytics & MLOps</h3> 
+                        <p class="small-para"> 
+                            "Data Analytics" refers to the process of extracting 
+                            meaningful insights from data using statistical methods 
+                            and visualization techniques, 
+                            while "MLOps"(Machine Learning Operations) is a set of practices
+                            that automate and streamline the entire lifecycle of a machine 
+                            learning model, from development to deployment and monitoring, 
+                            ensuring its effectiveness in a production environment; 
+                            essentially, data analytics focuses on extracting insights 
+                            from data while MLOps focuses on operationalizing machine learning 
+                            models to continuously deliver value in real-world applications.  
+                        </p> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="my-row"> 
+                <div class="my-col"> 
+                    <div class="my-card"> 
+                        <div class="icon"> 
+                            <i class="fa-brands fa-docker"></i>
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                            Application Support & DevOps Engineering 
+                        </h3> 
+                        <p class="small-para"> 
+                            Application support and DevOps engineering are related fields
+                            that involve managing the development, testing, and support of 
+                            software. DevOps is a methodology that aims to improve 
+                            collaboration and communication between development 
+                            and operations teams.  
+                        </p>
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card"> 
+                        <div class="icon"> 
+                            <i class="fa-solid fa-robot"></i>
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                            Test Automation 
+                        </h3> 
+                        <p class="small-para"> 
+                            Test automation is the practice of automatically reviewing and 
+                            validating a software product, such as a web application, 
+                            to make sure it meets predefined quality standards for code style, 
+                            functionality (business logic), and user experience. 
+                        </p>
+                    </div> 
+                </div> 
+                <div class="my-col"> 
+                    <div class="my-card"> 
+                        <div class="icon"> 
+                            <i class="fa-solid fa-person-chalkboard"></i>
+                        </div> 
+                        <h3 class="greet-heading blue-text"> 
+                            Mentoring, Training & Development 
+                        </h3> 
+                        <p class="small-para"> 
+                            "Mentoring, Training & Development" is a type of training in which a more experienced individual
+                            (mentor) provides guidance and support to a less 
+                            experienced person (mentee) alongside structured 
+                            training programs designed to enhance their skills 
+                            and knowledge, ultimately leading to career advancement 
+                            and improved performance. 
+                        </p> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+
+    <!-- Contact me section -->
+    <section class="contact" id="contact"> 
+        <div class="contact-heading"> 
+            <h1 class="my-heading text-center">Contact Me</h1> 
+        </div> 
+        <div class="contact-content"> 
+            <!-- <div class="contact-form-container"> 
+                <h1 class="greet-heading">Get In Touch</h1> 
+                <form class="contact-form"> 
+                    <input class="form-controls" type="text"
+                        placeholder="Your Name"> 
+                    <input class="form-controls" type="text"
+                        placeholder="Your Email"> 
+                    <input class="form-controls" type="text"
+                        placeholder="Your Phone"> 
+                    <textarea class="form-controls"
+                            placeholder="Write your message"
+                            name="message" id="" cols="30"
+                            rows="10"> 
+                    </textarea> 
+                    <input class="form-btn btn common-btn"
+                        type="submit" value="Send Message"> 
+                </form> 
+            </div> --> 
+            <div class="contact-details"> 
+                <h1 class="greet-heading">My Contact Details</h1> 
+                <div class="details"> 
+                    <h5 class="contact-heading">EMAIL</h5> 
+                    <p class="contact-text">psundarraj1221@gmail.com</p> 
+                </div> 
+                <div class="details"> 
+                    <h5 class="contact-heading">PHONE</h5> 
+                    <p class="contact-text">+91 7401256086</p> 
+                </div> 
+                <!-- <div class="details"> 
+                    <h5 class="contact-heading">FAX</h5> 
+                    <p class="contact-text">+91 0123456789</p> 
+                </div> --> 
+                <div class="details"> 
+                    <h5 class="contact-heading">ADDRESS</h5> 
+                    <p class="contact-text">Revolution One Apartment, E Block, 8th Floor, APT-E811,</p> 
+                    <p>OMR Main Road, Padur Village, Kancheepurm Disrict,</p> 
+                    <p>Chengalpattu Division, Tiruporur Taluk, Chennai-603103.</p> 
+                </div> 
+            </div> 
+            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="HORIZONTAL" data-vanity="prabhu-sundarraj" data-version="v1">
+                <a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/prabhu-sundarraj?trk=profile-badge"></a>
             </div>
-        </div>
-    </div>
-</header>
-
-<section>
-    <div class="rt-container">
-          <div class="col-rt-12">
-              <div class="Scriptcontent">
               
-<!-- Student Profile -->
-<div class="student-profile py-4">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4">
-        <div class="card shadow-sm">
-          <div class="card-header bg-transparent text-center">
-            <img class="profile_img" src="1568537656826.jpg" alt="student dp">
-            <h3>Prabhu Sundarraj</h3>
-          </div>
-          <div class="card-body">
-            <p class="mb-0"><strong class="pr-1">Student ID:</strong>2020MT93726</p>
-            <p class="mb-0"><strong class="pr-1">Course:</strong>MTech Software Engineering</p>
-            <p class="mb-0"><strong class="pr-1">Subject:</strong>Open Source Software Engineering</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-8">
-        <div class="card shadow-sm">
-          <div class="card-header bg-transparent border-0">
-            <h3 class="mb-0"><i class="far fa-clone pr-1"></i>General Information</h3>
-          </div>
-          <div class="card-body pt-0">
-            <table class="table table-bordered">
-              <tr>
-                <th width="30%">Student ID</th>
-                <td width="2%">:</td>
-                <td>2020MT93726</td>
-              </tr>
-              <tr>
-                <th width="30%">Academic Year	</th>
-                <td width="2%">:</td>
-                <td>2020</td>
-              </tr>
-              <tr>
-                <th width="30%">Gender</th>
-                <td width="2%">:</td>
-                <td>Male</td>
-              </tr>
-              <tr>
-                <th width="30%">Religion</th>
-                <td width="2%">:</td>
-                <td>Hindu</td>
-              </tr>
-              <tr>
-                <th width="30%">blood</th>
-                <td width="2%">:</td>
-                <td>O"+ive"</td>
-              </tr>
-            </table>
-          </div>
-        </div>
-          <div style="height: 26px"></div>
-        <div class="card shadow-sm">
-          <div class="card-header bg-transparent border-0">
-            <h3 class="mb-0"><i class="far fa-clone pr-1"></i>About</h3>
-          </div>
-          <div class="card-body pt-0">
-              <p>~An active follower of Storage & Data Industry to understand the landscape very well~</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- partial -->
-           
-    		</div>
-		</div>
-    </div>
-</section>
-     
+        </div> 
+    </section> 
 
+    <!-- Footer section -->
+    <footer class="footer"> 
+        <div class="footer-content text-center"> 
+            <h4> 
+                Copyright © 2025 All rights reserved | 
+                This portfolio website is maintained by Prabhu Sundarraj 
+            </h4> 
+            <div class="social-links"> 
+                <div class="footer-menu"> 
+                    <ul class="footer-menu-list"> 
+                        <li class="footer-list-items"> 
+                            <a class="footer-links" href="https://www.linkedin.com/in/prabhu-sundarraj/"> 
+                                <i class="fab fa-linkedin-in"></i> 
+                            </a> 
+                        </li>
+                        <li class="footer-list-items"> 
+                            <a class="footer-links" href="https://github.com/prabhus489"> 
+                                <i class="fab fa-github"></i> 
+                            </a> 
+                        </li>  
+                    </ul> 
+                </div> 
+            </div> 
+        </div> 
+    </footer> 
 
-    <!-- Analytics -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"> 
+    </script> 
+    <script src="script.js"></script> 
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+</body> 
 
-	</body>
 </html>
